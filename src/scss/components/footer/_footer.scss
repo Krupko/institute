@@ -1,0 +1,44 @@
+/* ? ======= FOOTER START ======= */
+.footer {
+  &__container {
+    display: flex;
+  }
+
+  &__contact,
+  &__menu,
+  &__wrap-social {
+    display: flex;
+  }
+  &__wrapper-logo {
+    width: clamp(4.375rem, 3.788rem + 2.94vw, 7.313rem);
+    height: clamp(4.375rem, 3.788rem + 2.94vw, 7.313rem);
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image-logo {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__wrap-social {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__social {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+    fill: var(--color-dark-blue);
+  }
+
+  &__link:hover * {
+    color: var(--color-green);
+    fill: var(--color-green);
+    transition: 0.3s;
+  }
+}
+/* ? ======= FOOTER START MEDIA ======= */
+/* ? ======= FOOTER MEDIA END ======= */

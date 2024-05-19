@@ -1,0 +1,15 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header/header";
+@import "./components/header/burger";
+
+@import "./components/footer/footer";
+
+// страница контактов
+@import "./components/str-contact/contact/contact";
+@import "./components/str-contact/hero/hero";

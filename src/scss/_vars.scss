@@ -1,0 +1,24 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --inter: "Inter", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --content-width: 1570px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --color-white: #fff;
+  --color-blue: #bfd8ff;
+  --color-dark-blue: #3968b2;
+  --color-text: #324054;
+  --color-green: #0d8643;
+  --color-red: #ef3e3f;
+  --color-black: #000;
+
+  //border-radius
+  --radius13: 13px;
+  --radius20: 20px;
+  --radius: 35px;
+}
