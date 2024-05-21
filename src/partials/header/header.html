@@ -14,7 +14,7 @@
           </svg>
         </a>
 
-        <button class="header__search js-header__search btn-reset">
+        <button class="header__search header__search-js btn-reset">
           <svg class="header__search-icon">
             <use xlink:href="img/sprite.svg#search"></use>
           </svg>
@@ -32,7 +32,7 @@
           <svg class="header__social">
             <use xlink:href="img/sprite.svg#phone"></use>
           </svg>
-          <span>+7 (343) 201-44-24</span>
+          <span>7 (343) 201-44-24</span>
         </a>
       </div>
     </div>
@@ -44,7 +44,7 @@
         <img class="header__image-logo" src="img/logo1.svg" loading="lazy" alt="Логотип УЦПК">
       </a>
 
-      <menu class="header__menu js-header__menu list-reset">
+      <menu class="header__menu header__menu-js list-reset">
         <li>
           <a href="#">
             О центре
@@ -77,13 +77,15 @@
         </li>
       </menu>
       <!--? ======= form search start ======= -->
-      <label class="header__form-search js-header__form-search">
-        <input class="header__form-input input-reset" type="text" placeholder="Search...">
+      <form class="header__form-search header__form-search-js" action="#">
+        <label class="header__form-label">
+          <input class="header__form-input input-reset" type="text" placeholder="Search...">
+        </label>
         <button class="header__form-button btn-reset">Goo..</button>
-      </label>
+      </form>
       <!--? ======= form search ens ======= -->
       <!--? ======= burger start ======= -->
-      <button class="header__burger js-header__burger">
+      <button class="header__burger header__burger-js">
         <span></span>
         <span></span>
         <span></span>

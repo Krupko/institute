@@ -1,7 +1,7 @@
-const headerMenu = document.querySelector('.js-header__menu'),
-  headerBurgerButton = document.querySelector('.js-header__burger'),
-  buttonSearch = document.querySelector('.js-header__search'),
-  formSearch = document.querySelector('.js-header__form-search')
+const headerMenu = document.querySelector('.header__menu-js'),
+  headerBurgerButton = document.querySelector('.header__burger-js'),
+  buttonSearch = document.querySelector('.header__search-js'),
+  formSearch = document.querySelector('.header__form-search-js')
 
 /* ? ======= BURGER START ======= */
 headerBurgerButton.addEventListener('click', () => {
