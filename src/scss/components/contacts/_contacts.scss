@@ -1,0 +1,204 @@
+/* ? ======= CONTACTS START ======= */
+.contacts {
+  padding-bottom: clamp(1.25rem, 0.114rem + 3.03vw, 3.75rem); //(min-width: 600px) 60px - 20px
+
+  &__title {
+    margin-bottom: 13px;
+  }
+
+  &__subtitle {
+    margin-bottom: clamp(0.938rem, -0.625rem + 4.17vw, 4.375rem); //(min-width:600px) 70px - 30px
+    display: inline-block;
+    font-size: clamp(0.875rem, 0.591rem + 0.76vw, 1.5rem); //(min-width:600px) 24px - 14px
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color--black);
+  }
+
+  &__wrapper {
+    height: clamp(18.75rem, 12.981rem + 25.64vw, 43.75rem); // 700px - 300px
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: clamp(1.875rem, 0.759rem + 2.23vw, 3.438rem); //55px - 30px
+  }
+
+  &__text {
+    margin-bottom: clamp(0.938rem, 0.678rem + 1.15vw, 2.063rem); //33px - 15px
+    font-size: clamp(1.125rem, 0.784rem + 0.91vw, 1.875rem); // (min-width:600px) 30px - 18px
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--color-dark-blue);
+  }
+
+  &__map,
+  &__inner {
+    width: 50%;
+  }
+
+  &__map {
+    height: 100%;
+
+    div {
+      width: 100%;
+      height: 100%;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  }
+
+  &__inner,
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__form {
+    width: 100%;
+    gap: clamp(1.25rem, 0.58rem + 1.34vw, 2.188rem); //35px - 20px
+  }
+
+  &__label,
+  &__button {
+    width: 100%;
+    height: clamp(2.813rem, 2.38rem + 1.92vw, 4.688rem); //75px - 45px
+  }
+
+  &__textarea,
+  &__label {
+    padding: 10px 10px;
+    border: 2px solid var(--color-blue-light1);
+    border-radius: var(--radius13);
+
+    font-size: 18px;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__textarea,
+  &__input {
+    width: 100%;
+    height: 100%;
+
+    color: var(--color-grey);
+  }
+
+  &__textarea {
+    height: 230px;
+    height: clamp(6.25rem, 0.446rem + 11.61vw, 14.375rem);
+    outline: none;
+  }
+
+  &__label-check {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    cursor: pointer;
+
+    span {
+      font-size: clamp(0.625rem, 0.446rem + 0.36vw, 0.875rem); //14px - 10px
+      font-weight: 400;
+      line-height: 1.2;
+      color: var(--color-grey-dark);
+    }
+  }
+
+  &__input-check {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: rect(0 0 0 0);
+  }
+
+  &__input-style {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--color-blue-light1);
+    border-radius: 5px;
+    flex-shrink: 0;
+
+    position: relative;
+  }
+
+  &__input-check:checked + &__input-style:after {
+    width: 12px;
+    height: 12px;
+    content: "";
+    background-color: var(--color-dark-blue);
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__button {
+    width: 100%;
+    height: 75px;
+    height: clamp(3.125rem, 2.009rem + 2.23vw, 4.688rem); // 75px - 50px
+    border-radius: var(--radius13);
+    background-color: var(--color-dark-blue);
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 160%;
+    color: var(--color-white);
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* ? ======= CONTACTS END ======= */
+/* ? ======= CONTACTS MEDIA START ======= */
+@media (max-width: 801px) {
+  .contacts {
+    &__br--none {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 710px) {
+  .contacts {
+    &__wrapper {
+      height: auto;
+      flex-direction: column-reverse;
+    }
+
+    &__map,
+    &__inner {
+      width: 100%;
+    }
+
+    &__map {
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .contacts {
+    &__title {
+      justify-content: center;
+      gap: 0;
+      &:after {
+        width: 0;
+      }
+    }
+  }
+}
+/* ? ======= CONTACTS MEDIA END ======= */
