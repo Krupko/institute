@@ -94,6 +94,9 @@
 
   &__textarea {
     height: 230px;
+    max-height: 100%;
+    max-width: 100%;
+    resize: none;
     height: clamp(6.25rem, 0.446rem + 11.61vw, 14.375rem);
     outline: none;
   }
@@ -172,7 +175,7 @@
   }
 }
 
-@media (max-width: 710px) {
+@media (max-width: 810px) {
   .contacts {
     &__wrapper {
       height: auto;

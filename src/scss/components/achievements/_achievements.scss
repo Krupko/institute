@@ -1,0 +1,99 @@
+/* ? ======= ACHIEVEMENTS START ======= */
+.achievements {
+  margin-bottom: 30px;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__slider {
+    width: 100%;
+    max-height: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    position: relative;
+  }
+
+  &__swiper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__swiper-slide {
+    background-position: center;
+    background-size: cover;
+    max-width: 500px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__button-navigation {
+    width: 150px;
+    height: 42px;
+    background-color: var(--color-white);
+
+    position: absolute;
+    top: -70px;
+    right: 0;
+  }
+
+  &__button-prev,
+  &__button-next {
+    color: var(--color-white);
+
+    &:after {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background-color: var(--color-dark-blue);
+      flex-shrink: 0;
+      font-size: 20px;
+      font-weight: 700;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__button-prev {
+    left: auto;
+    right: 60px;
+  }
+}
+
+/* ? ======= ACHIEVEMENTS END ======= */
+/* ? ======= ACHIEVEMENTS MEDIA START ======= */
+@media (max-width: 1001px) {
+  .achievements {
+    &__slider {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .achievements {
+    margin-bottom: 0px;
+
+    &__button-navigation {
+      display: none;
+    }
+
+    &__title {
+      margin-bottom: 0;
+      justify-content: center;
+      gap: 0;
+
+      &::after {
+        width: 0;
+      }
+    }
+  }
+}
+/* ? ======= ACHIEVEMENTS MEDIA END ======= */
