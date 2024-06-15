@@ -1,3 +1,4 @@
+/* ? ======= HEADER START ======= */
 const headerMenu = document.querySelector('.header__menu-js'),
   headerBurgerButton = document.querySelector('.header__burger-js'),
   buttonSearch = document.querySelector('.header__search-js'),
@@ -17,6 +18,7 @@ buttonSearch.addEventListener('click', () => {
   formSearch.classList.toggle('header__active')
 })
 /* ? ======= SEARCH END ======= */
+/* ? ======= HEADER END ======= */
 
 
 

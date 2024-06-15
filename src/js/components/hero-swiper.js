@@ -1,3 +1,4 @@
+/* ? ======= HERO SWIPER START ======= */
 import Swiper from 'swiper';
 import { EffectFade, Autoplay } from 'swiper/modules';
 
@@ -15,4 +16,5 @@ const swiper = new Swiper('.hero__swiper', {
     disableOnInteraction: false,
   },
 });
+/* ? ======= HERO SWIPER END ======= */
 
