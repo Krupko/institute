@@ -1,3 +1,4 @@
+/* ? ======= ACHIEVEMENTS START ======= */
 import Swiper from 'swiper';
 import { Navigation, EffectCoverflow } from 'swiper/modules';
 
@@ -31,7 +32,9 @@ const swiper = new Swiper('.achievements__swiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.achievements__button-next',
+    prevEl: '.achievements__button-prev',
   },
 });
+
+/* ? ======= ACHIEVEMENTS END ======= */
