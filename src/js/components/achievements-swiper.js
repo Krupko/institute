@@ -23,10 +23,12 @@ const swiper = new Swiper('.achievements__swiper', {
   breakpoints: {
     360: {
       slidesPerView: 1,
+      spaceBetween: 20
     },
 
     590: {
       slidesPerView: 3,
+      spaceBetween: 20
     }
   },
 

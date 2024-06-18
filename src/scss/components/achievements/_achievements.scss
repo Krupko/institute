@@ -16,6 +16,7 @@
   }
 
   &__swiper {
+    width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -23,7 +24,7 @@
   &__swiper-slide {
     background-position: center;
     background-size: cover;
-    max-width: 500px;
+    width: 500px;
   }
 
   &__image {
@@ -80,6 +81,10 @@
 @media (max-width: 590px) {
   .achievements {
     margin-bottom: 0px;
+
+    &__swiper {
+      width: 100%;
+    }
 
     &__button-navigation {
       display: none;

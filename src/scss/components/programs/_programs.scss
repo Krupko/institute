@@ -1,0 +1,36 @@
+/* ? ======= PROGRAMS START ======= */
+.programs {
+  width: 100%;
+  padding-bottom: clamp(1.25rem, 0.37rem + 2.82vw, 3.75rem); // max-width 60px 20px
+
+  &__card {
+    background-color: var(--color-blue);
+  }
+
+  &__title {
+    margin-bottom: clamp(1.875rem, 1.215rem + 2.11vw, 3.75rem); // max-width 60px 30px
+  }
+
+  &__cards-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+/* ? ======= PROGRAMS END ======= */
+/* ? ======= PROGRAMS MEDIA START ======= */
+@media (max-width: 590px) {
+  .programs {
+    &__title {
+      justify-content: center;
+      gap: 0;
+      &:after {
+        width: 0;
+      }
+    }
+  }
+}
+
+/* ? ======= PROGRAMS MEDIA END ======= */

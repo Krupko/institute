@@ -4,11 +4,6 @@ import { Navigation } from 'swiper/modules';
 
 const swiper = new Swiper('.partners__swiper', {
   modules: [Navigation],
-  // Optional parameters
-  // slidesPerView: 5,
-  // spaceBetween: 30,
-
-  // Responsive breakpoints
   breakpoints: {
     320: {
       slidesPerView: 2,
@@ -31,7 +26,6 @@ const swiper = new Swiper('.partners__swiper', {
     }
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.partners__button-next',
     prevEl: '.partners__button-prev',
