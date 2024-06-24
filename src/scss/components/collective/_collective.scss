@@ -1,0 +1,62 @@
+/* ? ======= COLLECTIVE START ======= */
+.collective {
+  margin-bottom: clamp(1.25rem, 0.81rem + 1.41vw, 2.5rem); // max-width 40px 20px
+
+  &__title {
+    margin-bottom: clamp(1.25rem, 0.81rem + 1.41vw, 2.5rem); // max-width 40px 20px
+  }
+
+  &__card {
+    max-width: 400px;
+    background-color: var(--color-blue);
+  }
+
+  &__card-image {
+    width: 100%;
+    height: 355px;
+    border-radius: var(--radius20);
+    overflow: hidden;
+  }
+
+  &__button-svg {
+    width: 32px;
+    use {
+      transition: 0.5s;
+      fill: var(--color-white);
+    }
+  }
+
+  &__card-button {
+    background-color: transparent;
+    border: 2px solid var(--color-dark-blue);
+
+    transition: 0.5s;
+    color: var(--color-white);
+
+    &:hover {
+      transition: 0.5s;
+      background-color: var(--color-white);
+      color: var(--color-dark-blue);
+
+      .collective__button-svg {
+        use {
+          fill: var(--color-dark-blue);
+        }
+      }
+    }
+  }
+}
+/* ? ======= COLLECTIVE END ======= */
+/* ? ======= COLLECTIVE MEDIA START ======= */
+@media (max-width: 590px) {
+  .collective {
+    &__title {
+      justify-content: center;
+      gap: 0;
+      &:after {
+        width: 0;
+      }
+    }
+  }
+}
+/* ? ======= COLLECTIVE MEDIA END ======= */

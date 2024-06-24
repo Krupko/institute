@@ -10,7 +10,7 @@
   }
 
   &__sidebar {
-    width: 275px;
+    width: fit-content;
     padding: 20px;
 
     background-color: var(--color-blue);
@@ -20,16 +20,23 @@
   &__title-sidebar {
     margin-top: 0;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: clamp(1.125rem, 0.961rem + 0.34vw, 1.375rem); // max-width 22px 18px
     font-weight: 600;
     line-height: 1.3;
     text-align: center;
     color: var(--color-text);
   }
 
+  &__nav {
+    height: 90%;
+  }
+
   &__menu {
     min-height: 100%;
-    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
     li {
       padding-top: 5px;
@@ -43,6 +50,7 @@
       gap: 10px;
 
       a {
+        font-size: clamp(1rem, 0.836rem + 0.34vw, 1.25rem); // max-width 20px 16px
         font-weight: 500;
         line-height: 1.1;
         transition: 0.3s;
@@ -73,6 +81,7 @@
     height: 24px;
     fill: var(--color-text);
     transition: 0.3s;
+    flex-shrink: 0;
   }
 
   &__slider {
