@@ -93,18 +93,6 @@
   }
 }
 
-@media (max-width: 590px) {
-  .news {
-    &__title {
-      justify-content: center;
-      gap: 0;
-      &:after {
-        width: 0;
-      }
-    }
-  }
-}
-
 @media (max-width: 450px) {
   .news {
     &__card {

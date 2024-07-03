@@ -137,6 +137,16 @@ a {
   }
 }
 
+@media (max-width: 590px) {
+  .title-h2 {
+    justify-content: center;
+    gap: 0;
+    &:after {
+      width: 0;
+    }
+  }
+}
+
 /*? ======= style btn ======= */
 .button-green {
   width: clamp(20.313rem, 19.375rem + 4.17vw, 24.375rem); //390px - 325px

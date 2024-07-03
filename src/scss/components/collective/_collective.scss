@@ -48,15 +48,4 @@
 }
 /* ? ======= COLLECTIVE END ======= */
 /* ? ======= COLLECTIVE MEDIA START ======= */
-@media (max-width: 590px) {
-  .collective {
-    &__title {
-      justify-content: center;
-      gap: 0;
-      &:after {
-        width: 0;
-      }
-    }
-  }
-}
 /* ? ======= COLLECTIVE MEDIA END ======= */

@@ -13,16 +13,4 @@
 }
 /* ? ======= PROGRAMS END ======= */
 /* ? ======= PROGRAMS MEDIA START ======= */
-@media (max-width: 590px) {
-  .programs {
-    &__title {
-      justify-content: center;
-      gap: 0;
-      &:after {
-        width: 0;
-      }
-    }
-  }
-}
-
 /* ? ======= PROGRAMS MEDIA END ======= */

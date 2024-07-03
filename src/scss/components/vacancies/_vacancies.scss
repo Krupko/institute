@@ -108,14 +108,6 @@
   .vacancies {
     border-radius: var(--radius20);
 
-    &__title {
-      justify-content: center;
-      gap: 0;
-      &:after {
-        width: 0;
-      }
-    }
-
     &__card-header {
       flex-direction: column;
       gap: 10px;

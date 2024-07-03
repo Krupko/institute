@@ -193,15 +193,4 @@
   }
 }
 
-@media (max-width: 590px) {
-  .contacts {
-    &__title {
-      justify-content: center;
-      gap: 0;
-      &:after {
-        width: 0;
-      }
-    }
-  }
-}
 /* ? ======= CONTACTS MEDIA END ======= */
