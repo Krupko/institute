@@ -1,7 +1,7 @@
 /* ? ======= NEWS START ======= */
 .news {
-  padding-top: clamp(2.5rem, 1.4rem + 3.52vw, 5.625rem); //min-width 90px 40px
-  padding-bottom: clamp(2.5rem, 2.06rem + 1.41vw, 3.75rem); //min-width 60px 40px
+  padding-top: clamp(40px, 22px + 3.52vw, 90px);
+  padding-bottom: clamp(40px, 33px + 1.41vw, 60px);
   padding-bottom: 60px;
   font-weight: 400;
 
@@ -46,7 +46,7 @@
 
   &__card-title {
     margin-bottom: 15px;
-    font-size: clamp(1.25rem, 1.03rem + 0.7vw, 1.875rem); //min-width 30px 20px
+    font-size: clamp(20px, 16px + 0.7vw, 30px);
     font-weight: 500;
     line-height: 1;
     letter-spacing: 1px;
@@ -57,7 +57,7 @@
   &__card-footer {
     margin: 0;
     padding: 0;
-    font-size: clamp(1rem, 0.846rem + 0.49vw, 1.438rem); //min-width 23px 16px
+    font-size: clamp(16px, 13px + 0.49vw, 23px);
     font-weight: 400;
     line-height: 1.2;
     color: var(--color-grey-dark);

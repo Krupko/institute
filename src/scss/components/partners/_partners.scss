@@ -1,13 +1,13 @@
 /* ? ======= PARTNERS START ======= */
 .partners {
-  padding-bottom: clamp(0.625rem, -0.475rem + 3.52vw, 3.75rem); //max-width 60px 10px
+  padding-bottom: clamp(10px, -8px + 3.52vw, 60px);
 
   &__container {
     position: relative;
   }
 
   &__title {
-    padding-bottom: clamp(0.625rem, -0.475rem + 3.52vw, 3.75rem); //max-width 60px 0px
+    padding-bottom: clamp(0px, -8px + 3.52vw, 60px);
   }
 
   &__slider {

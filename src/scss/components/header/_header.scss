@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: clamp(0.313rem, 0.088rem + 1.13vw, 1.438rem) 15px;
+    padding: clamp(5px, 1px + 1.13vw, 23px) 15px;
   }
 
   &__wrap-social,
@@ -25,7 +25,7 @@
     gap: 15px;
 
     span {
-      font-size: clamp(1.125rem, 1.053rem + 0.32vw, 1.438rem);
+      font-size: clamp(18px, 17px + 0.32vw, 23px);
       font-weight: 500;
       line-height: 1.21;
       color: var(--color-red);
@@ -50,7 +50,7 @@
   }
 
   &__body-container {
-    padding: clamp(0.313rem, 0.125rem + 0.94vw, 1.25rem) 15px;
+    padding: clamp(5px, 2px + 0.94vw, 20px) 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,8 +59,8 @@
   }
 
   &__wrapper-logo {
-    width: clamp(4.375rem, 3.788rem + 2.94vw, 7.313rem);
-    height: clamp(4.375rem, 3.788rem + 2.94vw, 7.313rem);
+    width: clamp(70px, 60px + 2.94vw, 117px);
+    height: clamp(70px, 60px + 2.94vw, 117px);
     display: block;
     justify-content: center;
     align-items: center;
@@ -75,10 +75,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: clamp(1.25rem, -0.472rem + 4.14vw, 4.5rem);
+    gap: clamp(20px, -7px + 4.14vw, 72px);
     li > a {
       font-family: var(--poppins);
-      font-size: clamp(1rem, 0.623rem + 0.73vw, 1.5rem);
+      font-size: clamp(16px, 10px + 0.73vw, 24px);
       font-weight: 500;
       line-height: 1.21;
       color: var(--color-text);
@@ -149,7 +149,7 @@
     width: 100%;
 
     font-family: var(--poppins);
-    font-size: clamp(1rem, 0.623rem + 0.73vw, 1.5rem);
+    font-size: clamp(16px, 10px + 0.73vw, 24px);
     font-weight: 500;
     line-height: 1.21;
     color: var(--color-text);

@@ -1,12 +1,12 @@
 /* ? ======= PHOTO-GALLERY START ======= */
 .photo-gallery {
   padding: {
-    top: 60px;
-    bottom: 60px;
+    top: clamp(30px, 19px + 2.11vw, 60px);
+    bottom: clamp(30px, 19px + 2.11vw, 60px);
   }
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: clamp(20px, 13px + 1.41vw, 40px);
   }
 
   &__wrapper {

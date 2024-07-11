@@ -1,32 +1,31 @@
 /* ? ======= CONTACTS START ======= */
 .contacts {
-  padding-bottom: clamp(1.25rem, 0.114rem + 3.03vw, 3.75rem); //(min-width: 600px) 60px - 20px
+  padding-bottom: clamp(20px, 0.114rem + 3.03vw, 60px);
 
   &__title {
     margin-bottom: 13px;
   }
 
   &__subtitle {
-    margin-bottom: clamp(0.938rem, -0.625rem + 4.17vw, 4.375rem); //(min-width:600px) 70px - 30px
+    margin-bottom: clamp(30px, -0.625rem + 4.17vw, 70px);
     display: inline-block;
-    font-size: clamp(0.875rem, 0.591rem + 0.76vw, 1.5rem); //(min-width:600px) 24px - 14px
+    font-size: clamp(14px, 0.591rem + 0.76vw, 24px);
     font-weight: 400;
     line-height: 1.2;
     color: var(--color--black);
   }
 
   &__wrapper {
-    height: clamp(18.75rem, 12.981rem + 25.64vw, 43.75rem); // 700px - 300px
+    height: clamp(300px, 12.981rem + 25.64vw, 700px);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: clamp(1.875rem, 0.759rem + 2.23vw, 3.438rem); //55px - 30px
+    gap: clamp(30px, 0.759rem + 2.23vw, 55px);
   }
 
   &__text {
-    margin-bottom: clamp(0.938rem, 0.678rem + 1.15vw, 2.063rem); //33px - 15px
-    font-size: clamp(1.125rem, 0.784rem + 0.91vw, 1.875rem); // (min-width:600px) 30px - 18px
-    font-weight: 500;
+    margin-bottom: clamp(15px, 0.678rem + 1.15vw, 33px);
+    font-size: clamp(18px, 0.784rem + 0.91vw, 30px);
     line-height: 1.2;
     color: var(--color-dark-blue);
   }
@@ -61,13 +60,13 @@
 
   &__form {
     width: 100%;
-    gap: clamp(1.25rem, 0.58rem + 1.34vw, 2.188rem); //35px - 20px
+    gap: clamp(20px, 0.58rem + 1.34vw, 35px);
   }
 
   &__label,
   &__button {
     width: 100%;
-    height: clamp(2.813rem, 2.38rem + 1.92vw, 4.688rem); //75px - 45px
+    height: clamp(45px, 2.38rem + 1.92vw, 75px);
   }
 
   &__textarea,
@@ -109,7 +108,7 @@
     cursor: pointer;
 
     span {
-      font-size: clamp(0.625rem, 0.446rem + 0.36vw, 0.875rem); //14px - 10px
+      font-size: clamp(10px, 7px + 0.36vw, 14px);
       font-weight: 400;
       line-height: 1.2;
       color: var(--color-grey-dark);
@@ -149,7 +148,7 @@
   &__button {
     width: 100%;
     height: 75px;
-    height: clamp(3.125rem, 2.009rem + 2.23vw, 4.688rem); // 75px - 50px
+    height: clamp(50px, 32px + 2.23vw, 75px);
     border-radius: var(--radius13);
     background-color: var(--color-dark-blue);
 

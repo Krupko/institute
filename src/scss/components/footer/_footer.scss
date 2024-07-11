@@ -1,6 +1,6 @@
 .footer {
   padding-top: 57px;
-  padding-bottom: clamp(1.25rem, 0.259rem + 4.4vw, 3.563rem);
+  padding-bottom: clamp(20px, 4px + 4.4vw, 57px);
   background-color: var(--color-blue);
 
   &__container {
@@ -21,8 +21,8 @@
   }
 
   &__wrapper-logo {
-    width: clamp(4.375rem, 3.788rem + 2.94vw, 7.313rem);
-    height: clamp(4.375rem, 3.788rem + 2.94vw, 7.313rem);
+    width: clamp(70px, 60px + 2.94vw, 117px);
+    height: clamp(70px, 60px + 2.94vw, 117px);
     display: block;
     justify-content: center;
     align-items: center;
@@ -47,8 +47,8 @@
   }
 
   &__list:first-child {
-    font-size: clamp(0.875rem, 0.591rem + 0.76vw, 1.5rem);
-    margin-bottom: clamp(1.25rem, 0.673rem + 2.56vw, 3.75rem);
+    font-size: clamp(14px, 9px + 0.76vw, 24px);
+    margin-bottom: clamp(20px, 11px + 2.56vw, 60px);
   }
 
   &__menu {
@@ -65,7 +65,7 @@
       padding: 0;
 
       a {
-        font-size: clamp(0.875rem, 0.817rem + 0.26vw, 1.125rem);
+        font-size: clamp(14px, 13px + 0.26vw, 18px);
         font-weight: 400;
         line-height: 1.1;
         color: var(--color-black);
@@ -135,8 +135,8 @@
   }
 
   &__button {
-    width: clamp(2.5rem, 2.327rem + 0.77vw, 3.25rem);
-    height: clamp(2.5rem, 2.327rem + 0.77vw, 3.25rem);
+    width: clamp(40px, 37px + 0.77vw, 52px);
+    height: clamp(40px, 37px + 0.77vw, 52px);
     border-radius: 50%;
     background-color: var(--color-white);
     position: absolute;

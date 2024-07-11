@@ -1,9 +1,9 @@
 /* ? ======= COLLECTIVE START ======= */
 .collective {
-  margin-bottom: clamp(1.25rem, 0.81rem + 1.41vw, 2.5rem); // max-width 40px 20px
+  margin-bottom: clamp(20px, 13px + 1.41vw, 40px);
 
   &__title {
-    margin-bottom: clamp(1.25rem, 0.81rem + 1.41vw, 2.5rem); // max-width 40px 20px
+    margin-bottom: clamp(20px, 13px + 1.41vw, 40px);
   }
 
   &__card {
