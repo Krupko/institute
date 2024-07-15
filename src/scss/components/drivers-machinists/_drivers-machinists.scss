@@ -1,0 +1,25 @@
+/* ? ======= DRIVERS-MACHINISTS START ======= */
+.drivers-machinists {
+  &__title-br {
+    display: none;
+  }
+}
+
+@media (max-width: 980px) {
+  .drivers-machinists {
+    &__title-br {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .drivers-machinists {
+    &__title {
+      text-align: center;
+    }
+  }
+}
+/* ? ======= DRIVERS-MACHINISTS END ======= */
+/* ? ======= DRIVERS-MACHINISTS MEDIA START ======= */
+/* ? ======= DRIVERS-MACHINISTS MEDIA END ======= */

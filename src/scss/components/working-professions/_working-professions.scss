@@ -1,14 +1,5 @@
 /* ? ======= WORKING-PROFESSIONS START ======= */
 .working-professions {
-  width: 100%;
-  padding: {
-    top: clamp(20px, 12px + 1.41vw, 40px);
-    bottom: clamp(30px, 19px + 2.11vw, 60px);
-  }
-  &__title {
-    margin-bottom: clamp(20px, 4px + 3.17vw, 65px);
-  }
-
   &__title-br {
     display: none;
   }

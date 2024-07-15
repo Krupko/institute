@@ -1,0 +1,16 @@
+/* ? ======= MANAGERS-SPECIALISTS START ======= */
+.managers-specialists {
+  &__title-br500 {
+    display: none;
+  }
+}
+/* ? ======= MANAGERS-SPECIALISTS END ======= */
+/* ? ======= MANAGERS-SPECIALISTS MEDIA START ======= */
+@media (max-width: 500px) {
+  .managers-specialists {
+    &__title-br500 {
+      display: block;
+    }
+  }
+}
+/* ? ======= MANAGERS-SPECIALISTS MEDIA END ======= */
