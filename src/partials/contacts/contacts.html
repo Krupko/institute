@@ -1,58 +1,351 @@
 <!--? ======= CONTACTS START ======= -->
 <section class="contacts">
-  <h2 hidden="hidden">Контакты Уральского Центра Подготовки Кадров</h2>
   <div class="contacts__container container">
+    <h2 hidden="hidden">Контакты Уральского Центра Подготовки Кадров</h2>
     <h2 class="contacts__title title-h2">
-      контакты
+      наши координаты
     </h2>
 
-    <span class="contacts__subtitle">
-      Негосударственное образовательное частное учреждение дополнительного<br class="contacts__br--none">
-      профессионального образования Уральский Центр Подготовки Кадров
-    </span>
-
     <div class="contacts__wrapper">
-      <div class="contacts__map">
-        <div style="position:relative;overflow:hidden;">
-          <a href="https://yandex.ru/maps/54/yekaterinburg/?utm_medium=mapframe&utm_source=maps"
-            style="color:#eee;font-size:12px;position:absolute;top:0px;">Екатеринбург</a>
-          <a href="https://yandex.ru/maps/54/yekaterinburg/house/ulitsa_chebyshyova_6/YkkYcARkTUUDQFtsfXR1cXViZQ==/?ll=60.634891%2C56.841045&utm_campaign=desktop&utm_medium=mapframe&utm_source=maps&z=17.01"
-            style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Чебышёва, 6 — Яндекс Карты
-          </a>
-          <iframe
-            src="https://yandex.ru/map-widget/v1/?ll=60.634891%2C56.841045&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjA4ODg3MRJv0KDQvtGB0YHQuNGPLCDQodCy0LXRgNC00LvQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCV0LrQsNGC0LXRgNC40L3QsdGD0YDQsywg0YPQu9C40YbQsCDQp9C10LHRi9GI0ZHQstCwLCA2IgoNoYlyQhUYXWNC&utm_campaign=desktop&utm_medium=search&utm_source=maps&z=17.01"
-            width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
-          </iframe>
-        </div>
+      <div class="contacts__inner contacts__inner-flex">
+        <ul class="contacts__address-list list-reset">
+          <li class="contacts__address-item">
+            <svg class="contacts__address-icon">
+              <use xlink:href="img/sprite.svg#building"></use>
+            </svg>
+            город Екатеринбург, ул. Чебышева<br> строение 6 офис 319
+          </li>
+          <li class="contacts__address-item">
+            <svg class="contacts__address-icon">
+              <use xlink:href="img/sprite.svg#office-phone"></use>
+            </svg>
+            +7 (343) 201-44-24
+          </li>
+          <li class="contacts__address-item">
+            <svg class="contacts__address-icon">
+              <use xlink:href="img/sprite.svg#mail-contact"></use>
+            </svg>
+            ural-cpk@mail.ru
+          </li>
+        </ul>
+
+        <ul class="contacts__working-time-list list-reset">
+          <li class="contacts__working-time-item">время работы</li>
+          <li class="contacts__working-time-item">понедельник: с 8-30 до 17-30</li>
+          <li class="contacts__working-time-item">вторник: с 8-30 до 17-30</li>
+          <li class="contacts__working-time-item">среда: с 8-30 до 17-30</li>
+          <li class="contacts__working-time-item">четверг: с 8-30 до 17-30</li>
+          <li class="contacts__working-time-item">пятница: с 8-30 до 17-30</li>
+        </ul>
       </div>
 
       <div class="contacts__inner">
-        <div class="contacts__text">Отправить заявку или задать вопрос</div>
+        <ul class="contacts__route-list list-reset">
+          <li class="contacts__route-item">трамваи</li>
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#streetcar"></use>
+              </svg>
+              <span>4</span>Метро Ботаническая → Шарташ
+            </a>
+          </li>
 
-        <form class="contacts__form" action="mail.php" method="POST">
-          <label class="contacts__label">
-            <input class="contacts__input input-reset" type="text" name="name" placeholder="Имя">
-          </label>
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#streetcar"></use>
+              </svg>
+              <span>8</span>ЛКСМ → Машиностроителей
+            </a>
+          </li>
 
-          <label class="contacts__label">
-            <input class="contacts__input input-reset" type="tel" name="tel" placeholder="Телефон">
-          </label>
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>13</span>40 лет ВЛКСМ → 7 Ключей
+            </a>
+          </li>
 
-          <textarea class="contacts__textarea" name="" id="" placeholder="Текст сообщения"></textarea>
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#streetcar"></use>
+              </svg>
+              <span>15</span>Вторчермет → 40 лет ВЛКСМ
+            </a>
+          </li>
 
-          <label class="contacts__label-check">
-            <input class="contacts__input-check" type="checkbox">
-            <span class="contacts__input-style"></span>
-            <span>
-              Нажимая кнопку «Отправить сообщение», я даю свое согласие<br class="contacts__br--none">
-              на обработку моих персональных данных
-            </span>
-          </label>
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#streetcar"></use>
+              </svg>
+              <span>16</span>Волгоградская → Волгоградская
+            </a>
+          </li>
 
-          <input class="contacts__button btn-reset" type="submit" value="Отправить сообщение">
-        </form>
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#streetcar"></use>
+              </svg>
+              <span>18</span>Волгоградская → Шарташ
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
+
+    <div class="contacts__inner contacts__inner-bus">
+      <div class="contacts__route-item contacts__route-bus">автобусы</div>
+
+      <div class="contacts__wrapper-bus">
+        <ul class="contacts__route-list contacts__route-list--bus list-reset">
+          <li class="contacts__route-item contacts__bus-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>24</span>Сады → Компрессорный микрорайон
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>28</span>Радиоколледж → Горбольница №7
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>49</span>ЖБИ → СТЦ Мега
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>50</span>Уральский федеральный университет → ТЦ Лента
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>54</span>Синие Камни → Краснолесье
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>054</span>Синие Камни → Ритейл-парк Солнечный
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>56</span>Новокольцовский микрорайон → 7 Ключей - Тагильский подход
+            </a>
+          </li>
+        </ul>
+
+        <ul class="contacts__route-list contacts__route-list--bus list-reset">
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>60</span>Уральский федеральный университет → Химмаш
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>71</span>Восточная → пос. Исток
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>75</span>Восточная → пос. Калиновский
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>89</span>Окраинная → Уральский федеральный университет
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>90</span>Восточная → пос. Изоплит
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>112</span>Восточная → Еловая
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>114</span>Старателей → Ж/д вокзал
+            </a>
+          </li>
+        </ul>
+
+        <ul class="contacts__route-list contacts__route-list--bus list-reset">
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>117</span>Молодёжный → Восточная
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>119</span>Ключевск → Восточная
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>120</span>Северный автовокзал → с. Косулино
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>120</span>пос. Октябрьский → Восточная
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>121</span>Восточная → Сарапулка
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>128</span>Восточная → пос. Уральский
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>141</span>Восточная → Верхнее Дуброво
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>150</span>Восточная → Автостанция
+            </a>
+          </li>
+
+          <li class="contacts__route-item">
+            <a class="contacts__route-link" target="_blank"
+              href="https://2gis.ru/ekaterinburg/search/Екатеринбург%2C%20ул.%20Чебышева%20строение%206/station/1267423374213279?m=60.634274%2C56.841161%2F17.53">
+              <svg class="contacts__address-icon">
+                <use xlink:href="img/sprite.svg#bus"></use>
+              </svg>
+              <span>166</span>Восточная → Автостанция
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </di>
 </section>
 <!--? ======= CONTACTS END ======= -->

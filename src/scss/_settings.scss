@@ -147,6 +147,32 @@ a {
   }
 }
 
+/*? ======= breadcrumbs ======= */
+.breadcrumbs {
+  margin-top: 30px;
+  @include flex(flex-start, center);
+  gap: 30px;
+
+  & > li {
+    position: relative;
+
+    a {
+      color: var(--color-grey-dark);
+    }
+
+    span {
+      color: var(--color-dark-blue);
+    }
+  }
+
+  & > li:not(:last-child):after {
+    content: "/";
+    position: absolute;
+    right: -15px;
+    transform: translate(50%);
+  }
+}
+
 /*? ======= секции карточек профессий ======= */
 .professions {
   width: 100%;

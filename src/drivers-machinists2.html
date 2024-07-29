@@ -7,12 +7,29 @@
   <div class="wrapper">
     @@include('partials/header/header.html')
     <main class="main">
+
+      <!--? ======= BREADCRUMBS START ======= -->
+      <div class="container">
+        <ul class="breadcrumbs list-reset">
+          <li>
+            <a href="http://localhost:3000/index.html">Главная</a>
+          </li>
+          <li>
+            <a href="http://localhost:3000/page-working-professions1.html">Обучение рабочим профессиям</a>
+          </li>
+          <li>
+            <span>Водители и машинисты самоходной техники</span>
+          </li>
+        </ul>
+      </div>
+      <!--? ======= BREADCRUMBS END ======= -->
+
       @@include('partials/hero/hero.html')
       @@include('partials/drivers-machinists/drivers-machinists.html')
       @@include('partials/collective/collective.html')
       @@include('partials/photo-gallery/photo-gallery.html')
       @@include('partials/feedback/feedback.html')
-      @@include('partials/contacts/contacts.html')
+      @@include('partials/email-us/email-us.html')
     </main>
     @@include('partials/footer/footer.html')
   </div>
