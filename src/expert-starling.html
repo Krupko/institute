@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+@@include('partials/head.html')
+
+<body class="page__body">
+
+  <div class="wrapper">
+    @@include('partials/header/header.html')
+    <main class="main">
+
+      <!--? ======= BREADCRUMBS START ======= -->
+      <div class="container">
+        <ul class="breadcrumbs list-reset">
+          <li>
+            <a href="http://localhost:3000/index.html">Главная</a>
+          </li>
+          <li>
+            <a href="http://localhost:3000/menu-page-collectuve.html">Коллектив</a>
+          </li>
+          <li>
+            <span>Скворцов Сергей Семенович</span>
+          </li>
+        </ul>
+      </div>
+      <!--? ======= BREADCRUMBS END ======= -->
+
+      <!--? ======= EXPERT START ======= -->
+      <section class="expert">
+        <h2 hidden="hidden">Специалисты Уральского Центра Подготовки Кадров</h2>
+
+        <section class="container expert__container">
+          <picture class="expert__image">
+            <source srcset="img/programs/laborers500.webp" type="image/webp">
+            <img class="expert__img" loading="lazy" src="img/programs/laborers500.jpg" alt="" width="500" height="334">
+          </picture>
+
+          <section class="expert__info">
+            <h4 class="expert__title">Скворцов Сергей Семенович</h4>
+            <div class="expert__inner-header">
+              <ul class="expert__list list-reset">
+                <li class="expert__item"><span>Должность:</span>Заместитель директора</li>
+                <li class="expert__item"><span>Образование:</span>Высшее техническое</li>
+              </ul>
+            </div>
+
+            <div class="expert__inner-body">
+              <h5 class="expert__title-h5">Направление подготовки</h5>
+              <p class="expert__text">
+                Управление специальной техникой и самоходными машинами (обучение и аттестация с присвоением категорий,
+                разрядов,
+                классов, групп)
+              </p>
+            </div>
+
+            <div class="expert__inner-footer">
+              <div class="expert__contacts">Контакты:</div>
+              <ul class="expert__contacts-list list-reset">
+                <li class="expert__contacts-item">
+                  <svg class="expert__contacts-icon">
+                    <use xlink:href="img/sprite.svg#phone"></use>
+                  </svg>
+                  +7 (999) 999 99 99
+                </li>
+                <li class="expert__contacts-item">
+                  <svg class="expert__contacts-icon">
+                    <use xlink:href="img/sprite.svg#mail"></use>
+                  </svg>
+                  ucp@mail.ru
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+      </section>
+      <!--? ======= EXPERT END ======= -->
+
+      @@include('partials/feedback/feedback.html')
+      @@include('partials/achievements/achievements.html')
+      @@include('partials/partners/partners.html')
+      @@include('partials/email-us/email-us.html')
+    </main>
+    @@include('partials/footer/footer.html')
+  </div>
+</body>
+
+</html>

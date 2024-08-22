@@ -3,7 +3,7 @@
   margin-bottom: 30px;
 
   &__title {
-    margin-bottom: 30px;
+    margin-bottom: clamp(0px, -10px + 2.11vw, 30px);
   }
 
   &__slider {
@@ -69,11 +69,22 @@
 
 /* ? ======= ACHIEVEMENTS END ======= */
 /* ? ======= ACHIEVEMENTS MEDIA START ======= */
+@media (max-width: 1200px) {
+  .achievements {
+    &__button-navigation {
+      top: -50px;
+    }
+  }
+}
 @media (max-width: 1001px) {
   .achievements {
     &__slider {
       padding-left: 0px;
       padding-right: 0px;
+    }
+
+    &__button-navigation {
+      top: -40px;
     }
   }
 }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+@@include('partials/head.html')
+
+<body class="page__body">
+
+  <div class="wrapper">
+    @@include('partials/header/header.html')
+    <main class="main">
+
+      <!--? ======= BREADCRUMBS START ======= -->
+      <div class="container">
+        <ul class="breadcrumbs loader-driver__breadcrumbs list-reset">
+          <li>
+            <a href="http://localhost:3000/index.html">Главная</a>
+          </li>
+          <li>
+            <a href="http://localhost:3000/page-working-professions1.html">Обучение рабочим профессиям</a>
+          </li>
+          <li>
+            <a href="http://localhost:3000/drivers-machinists2.html">Водители и машинисты самоходной техники</a>
+          </li>
+          <li>
+            <span>Водитель погрузчика</span>
+          </li>
+        </ul>
+      </div>
+      <!--? ======= BREADCRUMBS END ======= -->
+
+      @@include('partials/loader-driver3/loader-driver3.html')
+      @@include('partials/questions/questions.html')
+    </main>
+    @@include('partials/footer/footer.html')
+  </div>
+</body>
+
+</html>

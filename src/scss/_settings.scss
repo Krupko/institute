@@ -35,8 +35,8 @@ html {
 }
 
 img {
-  height: auto;
   max-width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -112,7 +112,7 @@ a {
   position: relative;
 }
 
-/*? ======= style title =======  */
+/*? ======= style title start =======  */
 .title-h2 {
   margin: 0;
   width: 100%;
@@ -147,10 +147,13 @@ a {
   }
 }
 
-/*? ======= breadcrumbs ======= */
+/*? ======= style title end =======  */
+
+/*? ======= breadcrumbs start ======= */
 .breadcrumbs {
   margin-top: 30px;
   @include flex(flex-start, center);
+  flex-wrap: wrap;
   gap: 30px;
 
   & > li {
@@ -158,10 +161,12 @@ a {
 
     a {
       color: var(--color-grey-dark);
+      white-space: nowrap;
     }
 
     span {
       color: var(--color-dark-blue);
+      white-space: nowrap;
     }
   }
 
@@ -172,8 +177,9 @@ a {
     transform: translate(50%);
   }
 }
+/*? ======= breadcrumbs end ======= */
 
-/*? ======= секции карточек профессий ======= */
+/*? ======= секции карточек профессий начало ======= */
 .professions {
   width: 100%;
   padding: {
@@ -185,8 +191,9 @@ a {
     margin-bottom: clamp(20px, 4px + 3.17vw, 65px);
   }
 }
+/*? ======= секции карточек профессий конец ======= */
 
-/*? ======= style btn ======= */
+/*? ======= style btn start ======= */
 .button-green {
   width: clamp(325px, 310px + 4.17vw, 390px);
   height: clamp(50px, 44px + 1.6vw, 75px);
@@ -202,15 +209,17 @@ a {
   justify-content: center;
   align-items: center;
 }
+/*? ======= style btn end ======= */
 
-/*? ======= style arrow ======= */
+/*? ======= style arrow start ======= */
 .arrow {
   width: 32px;
   transform: rotate(90deg);
   fill: var(--color-white);
 }
+/*? ======= style arrow end ======= */
 
-/*? ======= programs and collective card wrapper ======= */
+/*? ======= programs and collective card wrapper start ======= */
 .cards-wrapper {
   display: flex;
   justify-content: center;
@@ -218,8 +227,9 @@ a {
   flex-wrap: wrap;
   gap: 30px;
 }
+/*? ======= programs and collective card wrapper end ======= */
 
-/*? ======= programs and collective card ======= */
+/*? ======= programs and collective card start ======= */
 .card {
   min-height: 100%;
   max-width: 471px;
@@ -302,3 +312,101 @@ a {
     }
   }
 }
+/*? ======= programs and collective card end ======= */
+
+/*? ======= call-form start ======= */
+.call-form {
+  @include flex(space-between, flex-start);
+  gap: 10px;
+  flex-wrap: wrap;
+
+  &__label-inner {
+    @include flex(center, center);
+    gap: clamp(10px, -628.4px + 48vw, 58px);
+  }
+
+  &__label {
+    width: 450px;
+    height: 75px;
+    padding: 10px;
+    border: 2px solid var(--color-blue-light1);
+    border-radius: var(--radius13);
+  }
+
+  &__input {
+    width: 100%;
+    height: 100%;
+    font: {
+      size: 22px;
+      weight: 400;
+    }
+    color: var(--color-text);
+  }
+
+  &__label-button {
+    font: {
+      size: 15px;
+      weight: 400;
+    }
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    color: var(--color-grey-dark);
+
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  &__button {
+    width: 390px;
+    height: 75px;
+    background-color: var(--color-dark-blue);
+    border-radius: var(--radius10);
+
+    font: {
+      size: 18px;
+      weight: 700;
+    }
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    color: var(--color-white);
+
+    @include flex(center, center);
+  }
+}
+
+@media (max-width: 1349px) {
+  .call-form {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 925px) {
+  .call-form {
+    flex-direction: column;
+    align-items: center;
+
+    &__label-inner {
+      flex-direction: column;
+    }
+
+    &__button {
+      width: 450px;
+    }
+  }
+}
+
+@media (max-width: 485px) {
+  .call-form {
+    &__label-inner,
+    &__label {
+      width: 100%;
+    }
+
+    &__label-button,
+    &__button {
+      width: 100%;
+    }
+  }
+}
+/*? ======= call-form end ======= */

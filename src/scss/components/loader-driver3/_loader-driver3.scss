@@ -1,0 +1,110 @@
+/* ? ======= LOADER-DRIVER3 START ======= */
+.loader-driver {
+  width: 100%;
+  padding-top: 40px;
+
+  &__header {
+    height: 590px;
+    margin-bottom: 40px;
+    @include flex(space-between, flex-start);
+    gap: clamp(15px, -33px + 5.71vw, 35px);
+  }
+
+  &__image {
+    width: 25%;
+    border-radius: var(--radius10);
+    overflow: hidden;
+  }
+
+  &__pic {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  &__content {
+    max-width: 70%;
+    height: 100%;
+    @include flex(space-between, flex-start);
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    color: var(--color-green);
+
+    &:after {
+      width: 0;
+    }
+  }
+
+  span {
+    font: {
+      size: clamp(18px, 11px + 1.43vw, 28px);
+      weight: 600;
+    }
+    line-height: 1.2;
+    color: var(--color-dark-blue);
+  }
+
+  &__text {
+    margin: {
+      top: 15px;
+      bottom: 15px;
+    }
+    font: {
+      size: clamp(16px, 13px + 0.57vw, 20px);
+      weight: 400;
+    }
+    line-height: 1.4;
+    color: var(--color-grey1);
+  }
+
+  ul {
+    margin-top: 15px;
+    color: var(--color-grey1);
+  }
+
+  &__btn {
+    gap: 40px;
+    align-self: flex-end;
+  }
+}
+/* ? ======= LOADER-DRIVER3 END ======= */
+/* ? ======= LOADER-DRIVER3 MEDIA START ======= */
+@media (max-width: 1300px) {
+  .loader-driver {
+    &__header {
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .loader-driver {
+    &__header {
+      gap: 0;
+    }
+
+    &__image {
+      display: none;
+    }
+
+    &__content {
+      min-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .loader-driver {
+    &__breadcrumbs {
+      display: none;
+    }
+
+    &__btn {
+      align-self: center;
+    }
+  }
+}
+/* ? ======= LOADER-DRIVER3 MEDIA END ======= */

@@ -1,0 +1,160 @@
+/* ? ======= SCHEDULE START ======= */
+.schedule {
+  width: 100%;
+  padding-bottom: clamp(30px, 19px + 2.11vw, 60px);
+
+  &__container {
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+  }
+
+  &__subtitle {
+    margin-bottom: clamp(20px, 6px + 2.82vw, 60px);
+    font: {
+      size: clamp(20px, 14px + 1.13vw, 36px);
+      weight: 400;
+    }
+    line-height: 1.2;
+    color: var(--color-text);
+  }
+
+  &__list {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    height: fit-content;
+    width: 100%;
+    @include flex(space-between, stretch);
+    gap: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item:nth-child(n + 5) {
+    display: none;
+  }
+
+  .visual-item {
+    display: flex;
+  }
+
+  &__item-title,
+  &__item-button {
+    min-height: 100%;
+    margin: 0;
+    padding: 0 10px;
+    background-color: var(--color-dark-blue);
+    border-radius: var(--radius10);
+    @include flex(center, center);
+    flex-grow: 1;
+    flex-shrink: 1;
+    font: {
+      size: 18px;
+      weight: 700;
+    }
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--color-white);
+
+    transition: 0.3s;
+  }
+
+  &__item-button:hover {
+    background-color: var(--color-green);
+  }
+
+  &__item-body {
+    height: 100%;
+    padding: 5px 10px 5px 10px;
+    border: solid 2px var(--color-dark-blue);
+    border-radius: var(--radius10);
+    flex-grow: 2;
+    flex-shrink: 1;
+    font: {
+      size: 18px;
+      weight: 400;
+    }
+    line-height: 1.5;
+    color: var(--color-grey1);
+  }
+
+  &__item-body-title,
+  &__item-body-phone {
+    color: var(--color-dark-blue);
+    weight: 700;
+  }
+
+  &__svg {
+    width: 30px;
+    height: 30px;
+    transform: rotate(90deg);
+
+    fill: var(--color-dark-blue);
+    transition: 0.5s;
+  }
+
+  &__button {
+    width: 300px;
+    height: 85px;
+    border: solid 2px var(--color-dark-blue);
+    border-radius: var(--radius10);
+    align-self: self-end;
+
+    font: {
+      size: 22px;
+      weight: 500;
+    }
+    color: var(--color-dark-blue);
+
+    @include flex(center, center);
+    gap: 20px;
+    transition: 0.5s;
+
+    &:hover {
+      border: solid 2px var(--color-green);
+      color: var(--color-green);
+
+      & > .schedule__svg {
+        fill: var(--color-green);
+        transition: 0.5s;
+      }
+    }
+  }
+}
+/* ? ======= SCHEDULE END ======= */
+/* ? ======= SCHEDULE MEDIA START ======= */
+@media (max-width: 950px) {
+  .schedule {
+    &__item {
+      flex-direction: column;
+    }
+
+    &__item-title,
+    &__item-button {
+      height: 85px;
+    }
+
+    &__button {
+      align-self: center;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .schedule {
+    &__item-button,
+    &__button {
+      height: 70px;
+    }
+  }
+}
+/* ? ======= SCHEDULE MEDIA END ======= */

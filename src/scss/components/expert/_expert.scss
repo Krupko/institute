@@ -1,0 +1,130 @@
+/* ? ======= EXPERT START ======= */
+.expert {
+  padding: {
+    top: 36px;
+    bottom: 66px;
+  }
+
+  &__container {
+    @include flex(space-between, flex-start);
+    gap: 15px;
+  }
+
+  &__image {
+    border-radius: var(--radius20) 0 0 var(--radius20);
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+  }
+
+  &__info {
+    width: 60%;
+  }
+
+  &__inner-header {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin: {
+      top: 0;
+      bottom: 20px;
+    }
+
+    font: {
+      size: 36px;
+      weight: 600;
+    }
+    color: var(--color-dark-blue);
+  }
+
+  &__list,
+  &__text,
+  &__contacts-list {
+    font: {
+      size: 18px;
+      weight: 400;
+    }
+    color: var(--color-grey-dark);
+  }
+
+  &__item {
+    @include flex(flex-start, flex-end);
+    gap: 20px;
+
+    span {
+      color: var(--color-dark-blue);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title-h5,
+  &__contacts {
+    margin: {
+      top: 0;
+      bottom: 10px;
+    }
+    font: {
+      size: 22px;
+      weight: 600;
+    }
+    color: var(--color-dark-blue);
+  }
+
+  &__contacts-item {
+    @include flex(flex-start, center);
+    gap: 15px;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__contacts-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-dark-blue);
+  }
+}
+/* ? ======= EXPERT END ======= */
+/* ? ======= EXPERT MEDIA START ======= */
+@media (max-width: 1001px) {
+  .expert {
+    &__container {
+      width: 500px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__image {
+      border-radius: var(--radius20) var(--radius20) 0 0;
+      overflow: hidden;
+    }
+
+    &__info {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .expert {
+    &__container {
+      width: 100%;
+    }
+
+    &__item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+  }
+}
+/* ? ======= EXPERT MEDIA END ======= */
