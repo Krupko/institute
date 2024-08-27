@@ -70,7 +70,7 @@
           и&nbsp;<br class="hero__br">профессионального
           образования<br class="hero__br"> Свердловской области
         </p>
-        <button class="hero__button btn-reset">
+        <button class="hero__button js-hero__button btn-reset">
           <svg class="hero__svg-phone">
             <use xlink:href="img/sprite.svg#hero-phone"></use>
           </svg>
@@ -160,6 +160,30 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="popup js-popup">
+    <div class="popup__call">
+      <button class="popup__close js-popup__close btn-reset"></button>
+      <span class="popup__title">Заказать звонок</span>
+
+      <form class="call-form">
+        <label class="call-form__label popup__label">
+          <input class="call-form__input popup__input input-reset" placeholder="Имя" type="text">
+        </label>
+
+        <label class="call-form__label popup__label">
+          <input class="call-form__input popup__input input-reset" placeholder="Телефон" type="tel">
+        </label>
+
+        <label class="call-form__label-button popup__label-button">
+          <button class="call-form__button btn-reset">
+            отправить
+          </button>
+          нажимая кнопку "Отправить", вы соглашаетесь<br> с политикой конфидециальности
+        </label>
+      </form>
     </div>
   </div>
 </section>

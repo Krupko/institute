@@ -1,8 +1,6 @@
 /* ? ======= UP-BUTTON START ======= */
 const upButton = document.querySelector('.footer__button')
 
-console.log('upButton')
-
 window.addEventListener('scroll', () => {
   if (window.pageYOffset > 400) {
     upButton.style.display = 'flex'
